@@ -33,8 +33,6 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         signUp(email: email, password: password, name: name)
-        print("てすと")
-        print(email)
     }
     
     private func signUp(email: String, password: String, name: String) {
@@ -43,7 +41,6 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
                 self.updateDisplayName(name, of: user)
             } else {
                 SVProgressHUD.showError(withStatus: "Error!")
-                print("てすと１")
             }
         }
     }
@@ -55,7 +52,6 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
             if let error = error {
                 print(error)
                 SVProgressHUD.showError(withStatus: "Error!")
-                print("てすと２")
                 return
             }
             self.showSignUpCompletion()
