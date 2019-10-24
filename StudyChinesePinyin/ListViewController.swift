@@ -59,6 +59,20 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let post = Word(data: data)
                         self.words.append(post)
                     }
+                    if self.words.count == 0 {
+                        let document = Firestore.firestore().collection(user.uid).document()
+                        let documentID = document.documentID
+                        let data: [String: Any] = [
+                            "documentID": documentID,
+                            "pinyin": "yiqi xue zhongwen ba",
+                            "chinese": "一起學中文吧",
+                            "japanese": "一緒に中国語を学びましょう",
+                            "createdAt": Timestamp(date: Date())
+                        ]
+                        document.setData(data)
+                        let post = Word(data: data)
+                        self.words.append(post)
+                    }
                     self.myTableView.reloadData()
                 }
         }
@@ -68,5 +82,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
+        
+        
     }
 }
