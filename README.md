@@ -15,5 +15,5 @@ Firebase Cloud Firestore<br>
 Firebase Authentication<br>
 
 ## Requirement
-iOS Developer in Tokyo
+iOS Developer in Tokyo<br>
 Kazuma Noha
