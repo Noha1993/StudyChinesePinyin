@@ -3,8 +3,8 @@
 
 ## About
 This App is able to stock the Chinese sentences you want to remember.<br>
-Make own vocabulary note by yourself.<br>
-Help to study Chinese pinyin by making random question from the vocabulary note.<br>
+Make own vocabulary list by yourself.<br>
+Help to study Chinese pinyin by making random question from the vocabulary list.<br>
 
 |Login|List|Register|Study|
 |:--:|:--:|:--:|:--:|
