@@ -13,3 +13,7 @@ Help to study Chinese pinyin by making random question from the vocabulary list.
 ## Requirement
 Firebase Cloud Firestore<br>
 Firebase Authentication<br>
+
+## Requirement
+iOS Developer in Tokyo
+Kazuma Noha
