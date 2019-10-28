@@ -14,6 +14,6 @@ Help to study Chinese pinyin by making random question from the vocabulary list.
 Firebase Cloud Firestore<br>
 Firebase Authentication<br>
 
-## Requirement
+## Author
 iOS Developer in Tokyo<br>
 Kazuma Noha
