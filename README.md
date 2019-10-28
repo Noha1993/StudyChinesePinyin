@@ -9,3 +9,7 @@ Help to remember Chinese pinyin.<br>
 |Login|List|Register|Study|
 |:--:|:--:|:--:|:--:|
 |<img src="images/Screenshots/screenshot1.png">|<img src="images/Screenshots/screenshot2.png">|<img src="images/Screenshots/screenshot3.png">|<img src="images/Screenshots/screenshot4.png">|
+
+## Requirement
+Firebase Cloud Firestore
+Firebase Authentication
