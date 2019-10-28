@@ -20,13 +20,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! CustomCell
         let word = words[indexPath.row]
         cell.pinLabel.text = word.pinyin
         cell.chiLabel.text = word.chinese
         cell.japLabel.text = word.japanese
-        
         return cell
     }
     
@@ -38,7 +36,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let word = words[indexPath.row]
         let deleteID = word.documentID
         Firestore.firestore().collection(user.uid).document(deleteID).delete()
-        
         if editingStyle == UITableViewCell.EditingStyle.delete {
             words.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)

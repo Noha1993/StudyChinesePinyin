@@ -29,7 +29,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBAction func signInButton(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let user = result?.user {
                 SVProgressHUD.showSuccess(withStatus: "Success!")

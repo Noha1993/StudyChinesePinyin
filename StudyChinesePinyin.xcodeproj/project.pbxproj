@@ -96,23 +96,47 @@
 		A4323DDE2350B7300041E2D6 /* StudyChinesePinyin */ = {
 			isa = PBXGroup;
 			children = (
+				A47321B023670ED300845040 /* Cell */,
+				A47CA61223670D2900751BE2 /* View */,
+				A47CA60E23670B6200751BE2 /* Model */,
 				A4323DDF2350B7300041E2D6 /* AppDelegate.swift */,
-				A4323DE12350B7300041E2D6 /* ViewController.swift */,
 				A4323DE32350B7300041E2D6 /* Main.storyboard */,
 				A4323DE62350B7330041E2D6 /* Assets.xcassets */,
 				A4323DE82350B7330041E2D6 /* LaunchScreen.storyboard */,
 				A4323DEB2350B7330041E2D6 /* Info.plist */,
-				A4323DF12352CC080041E2D6 /* TabBarController.swift */,
-				A4323DF32352CCC00041E2D6 /* SettingColor.swift */,
+				A4323E052354A6E50041E2D6 /* GoogleService-Info.plist */,
+			);
+			path = StudyChinesePinyin;
+			sourceTree = "<group>";
+		};
+		A47321B023670ED300845040 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				A4323DF7235317800041E2D6 /* CustomCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A47CA60E23670B6200751BE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				A4323DF9235453DA0041E2D6 /* Word.swift */,
+				A4323DF32352CCC00041E2D6 /* SettingColor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A47CA61223670D2900751BE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4323DE12350B7300041E2D6 /* ViewController.swift */,
+				A4323DF12352CC080041E2D6 /* TabBarController.swift */,
 				A4323DFB235457900041E2D6 /* SignInViewController.swift */,
 				A4323DFD23545B880041E2D6 /* QuizViewController.swift */,
 				A4323DFF23545FB60041E2D6 /* ListViewController.swift */,
 				A4323E01235460A00041E2D6 /* NewAccountViewController.swift */,
-				A4323E052354A6E50041E2D6 /* GoogleService-Info.plist */,
 			);
-			path = StudyChinesePinyin;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

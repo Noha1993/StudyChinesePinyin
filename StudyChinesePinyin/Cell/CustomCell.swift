@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
-
+    
     @IBOutlet weak var pinLabel: UILabel!
     @IBOutlet weak var chiLabel: UILabel!
     @IBOutlet weak var japLabel: UILabel!
