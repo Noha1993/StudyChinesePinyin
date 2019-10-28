@@ -4,7 +4,7 @@
 ## About
 This App is able to stock the Chinese sentences you want to remember.<br>
 Make own vocabulary note by yourself.<br>
-Help to Study Chinese pinyin.<br>
+Help to study Chinese pinyin by making random question from the vocabulary note.<br>
 
 |Login|List|Register|Study|
 |:--:|:--:|:--:|:--:|
