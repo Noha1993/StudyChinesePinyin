@@ -28,7 +28,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard let user = Auth.auth().currentUser else {
             return
@@ -41,7 +40,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
         }
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         guard let user = Auth.auth().currentUser else {
@@ -56,6 +54,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let post = Word(data: data)
                         self.words.append(post)
                     }
+                    //データが無い場合は初期データを作成する
                     if self.words.count == 0 {
                         let document = Firestore.firestore().collection(user.uid).document()
                         let documentID = document.documentID
@@ -79,7 +78,5 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
-        
-        
     }
 }

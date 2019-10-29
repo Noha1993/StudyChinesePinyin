@@ -30,7 +30,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if let user = result?.user {
+            if result?.user != nil {
                 SVProgressHUD.showSuccess(withStatus: "Success!")
                 let storyboard: UIStoryboard = self.storyboard!
                 let nextView = storyboard.instantiateViewController(withIdentifier: "TabView")

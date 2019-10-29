@@ -83,5 +83,4 @@ class QuizViewController: UIViewController, UITextFieldDelegate {
                 self.questionLabel2.text = self.words[self.random].chinese
         }
     }
-    
 }
