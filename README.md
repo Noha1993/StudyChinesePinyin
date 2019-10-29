@@ -1,4 +1,4 @@
-# StudyChinesePinyin
+# Pinyin学習帳
 <img src="images/Screenshots/icon.png" width=150>
 
 ## About
