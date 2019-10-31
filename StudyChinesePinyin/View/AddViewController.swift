@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class AddViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var pinyinText: UITextField!
     @IBOutlet weak var chineseText: UITextField!

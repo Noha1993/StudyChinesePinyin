@@ -15,30 +15,10 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var words: [Word] = []
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return words.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! CustomCell
-        let word = words[indexPath.row]
-        cell.pinLabel.text = word.pinyin
-        cell.chiLabel.text = word.chinese
-        cell.japLabel.text = word.japanese
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        guard let user = Auth.auth().currentUser else {
-            return
-        }
-        let word = words[indexPath.row]
-        let deleteID = word.documentID
-        Firestore.firestore().collection(user.uid).document(deleteID).delete()
-        if editingStyle == UITableViewCell.EditingStyle.delete {
-            words.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
-        }
+    override func viewDidLoad() {
+            super.viewDidLoad()
+            self.myTableView.delegate = self
+            self.myTableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -74,9 +54,29 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.myTableView.delegate = self
-        self.myTableView.dataSource = self
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return words.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! CustomCell
+        let word = words[indexPath.row]
+        cell.pinLabel.text = word.pinyin
+        cell.chiLabel.text = word.chinese
+        cell.japLabel.text = word.japanese
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard let user = Auth.auth().currentUser else {
+            return
+        }
+        let word = words[indexPath.row]
+        let deleteID = word.documentID
+        Firestore.firestore().collection(user.uid).document(deleteID).delete()
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            words.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+        }
     }
 }

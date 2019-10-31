@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4323DE02350B7300041E2D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4323DDF2350B7300041E2D6 /* AppDelegate.swift */; };
-		A4323DE22350B7300041E2D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4323DE12350B7300041E2D6 /* ViewController.swift */; };
+		A4323DE22350B7300041E2D6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4323DE12350B7300041E2D6 /* AddViewController.swift */; };
 		A4323DE52350B7300041E2D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4323DE32350B7300041E2D6 /* Main.storyboard */; };
 		A4323DE72350B7330041E2D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4323DE62350B7330041E2D6 /* Assets.xcassets */; };
 		A4323DEA2350B7330041E2D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4323DE82350B7330041E2D6 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 		7B4DD06BAED6C1456184B5B7 /* Pods-StudyChinesePinyin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyChinesePinyin.release.xcconfig"; path = "Target Support Files/Pods-StudyChinesePinyin/Pods-StudyChinesePinyin.release.xcconfig"; sourceTree = "<group>"; };
 		A4323DDC2350B7300041E2D6 /* StudyChinesePinyin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyChinesePinyin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4323DDF2350B7300041E2D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4323DE12350B7300041E2D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4323DE12350B7300041E2D6 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A4323DE42350B7300041E2D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4323DE62350B7330041E2D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4323DE92350B7330041E2D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				A4323DFB235457900041E2D6 /* SignInViewController.swift */,
 				A4323DF12352CC080041E2D6 /* TabBarController.swift */,
 				A4323DFF23545FB60041E2D6 /* ListViewController.swift */,
-				A4323DE12350B7300041E2D6 /* ViewController.swift */,
+				A4323DE12350B7300041E2D6 /* AddViewController.swift */,
 				A4323DFD23545B880041E2D6 /* QuizViewController.swift */,
 			);
 			path = View;
@@ -257,7 +257,7 @@
 			files = (
 				A4323DFC235457900041E2D6 /* SignInViewController.swift in Sources */,
 				A4323DF22352CC080041E2D6 /* TabBarController.swift in Sources */,
-				A4323DE22350B7300041E2D6 /* ViewController.swift in Sources */,
+				A4323DE22350B7300041E2D6 /* AddViewController.swift in Sources */,
 				A4323E02235460A00041E2D6 /* NewAccountViewController.swift in Sources */,
 				A4323DFE23545B880041E2D6 /* QuizViewController.swift in Sources */,
 				A4323DF8235317800041E2D6 /* CustomCell.swift in Sources */,

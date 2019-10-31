@@ -12,10 +12,7 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         UITabBar.appearance().tintColor = SettingColor.secondary
         UITabBar.appearance().barTintColor = SettingColor.primary
-        
-        // Do any additional setup after loading the view.
     }
 }
