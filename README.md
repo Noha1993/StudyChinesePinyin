@@ -15,10 +15,10 @@ Firebase Cloud Firestore<br>
 Firebase Authentication<br>
 
 ## For Test Login
-This mailadress and password is for a test login.
-You can use the app without create new account by useing the adress and pass below.
-Email : studychinesepinyin@hoge.com
-Pass : pass123
+This mailadress and password is for a test login.<br>
+You can use the app without create new account by useing the adress and pass below.<br>
+Email : studychinesepinyin@hoge.com<br>
+Pass : pass123<br>
 
 ## Author
 iOS Developer in Tokyo<br>
