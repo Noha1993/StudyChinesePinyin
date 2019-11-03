@@ -14,6 +14,12 @@ Help to study Chinese pinyin by making random question from the vocabulary list.
 Firebase Cloud Firestore<br>
 Firebase Authentication<br>
 
+## For Test Login
+This mailadress and password is for a test login.
+You can use the app without create new account by useing the adress and pass below.
+Email : studychinesepinyin@hoge.com
+Pass : pass123
+
 ## Author
 iOS Developer in Tokyo<br>
 Kazuma Noha
