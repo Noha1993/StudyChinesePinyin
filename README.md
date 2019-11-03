@@ -16,7 +16,7 @@ Firebase Authentication<br>
 
 ## For Test Login
 This mailadress and password is for a test login.<br>
-You can use the app without create new account by useing the adress and pass below.<br>
+You can sign in the app without create new account by useing the adress and pass below.<br>
 Email : studychinesepinyin@hoge.com<br>
 Pass : pass123<br>
 
